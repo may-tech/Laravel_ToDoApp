@@ -29,7 +29,7 @@
             <!-- route 関数の第一引数はルート名.
             ルーティングの際に get メソッドに続けて呼び出した name メソッドの引数がそのルートの名前.
             route 関数の第二引数として渡している配列は、ルート URL のうち変数になっている部分（ここでは {id}）に実際の値を埋める役割. -->
-              <a href="{{ route('tasks.index', ['id' => $folder->id]) }}" class="list-group-item">
+              <a href="{{ route('tasks.index', ['id' => $folder->id]) }}" class="list-group-item {{ $current_folder_id === $folder->id ? 'active' : '' }}">
               <!-- コントローラーから渡されたデータ $folders を参照.
               タイトルの表示 {{ $folder->title }} 
               $folders にすべてのフォルダのデータが入っているので、foreach でループした一つのアイテムである $folder はフォルダテーブルの一行に相当すると考えられます。カラムの値は ->title と、プロパティのように参照することができます。 -->
