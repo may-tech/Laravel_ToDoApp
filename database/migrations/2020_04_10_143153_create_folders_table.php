@@ -15,14 +15,9 @@ class CreateFoldersTable extends Migration
     {
         Schema::create('folders', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('folder_id')->unsigned();
-            $table->string('title', 100);
-            $table->date('due_date');
-            $table->integer('status')->default(1);
+            $table->integer('folderid');
+            $table->string('title', 20);
             $table->timestamps();
-
-            // 外部キーを設定する
-            $table->foreign('folder_id')->references('id')->on('folders');
         });
     }
 
