@@ -25,4 +25,15 @@ class TaskController extends Controller
             'tasks' => $tasks,
         ]);
     }
+
+     /**
+     * GET /folders/{id}/tasks/create
+     */
+    // テンプレートで form 要素の action 属性としてタスク作成 URL（/folders/{id}/tasks/create）を作るためにフォルダの ID が必要なので、コントローラーメソッドの引数で受け取って view 関数でテンプレートに渡しています。
+    public function showCreateForm(int $id)
+    {
+        return view('tasks/create', [
+            'folder_id' => $id
+        ]);
+    }
 }
