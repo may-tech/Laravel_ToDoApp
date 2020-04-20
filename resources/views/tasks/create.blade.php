@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ToDo App</title>
+  <title>May's ToDo App</title>
   <!-- デフォルトのスタイルシート -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <!-- ブルーテーマの追加スタイルシート -->
@@ -14,7 +14,7 @@
 <body>
 <header>
   <nav class="my-navbar">
-    <a class="my-navbar-brand" href="/">ToDo App</a>
+    <a class="my-navbar-brand" href="/">May's ToDo App</a>
   </nav>
 </header>
 <main>
