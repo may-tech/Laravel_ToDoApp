@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('style')
+@section('styles')
   <!-- デフォルトのスタイルシート -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <!-- ブルーテーマの追加スタイルシート -->
@@ -49,10 +49,11 @@
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
 <script>
 // 第一引数に flatpickr で日付選択を行わせたい要素を指定し、第二引数にオプションを渡す。
-  flatpickr(document.getElementById('due_date'), {
-    locale: 'ja',
-    dateFormat: "Y/m/d",
-    minDate: new Date()
-  });
+    flatpickr(document.getElementById('due_date'), {
+      locale: 'ja',
+      dateFormat: "Y/m/d",
+      minDate: new Date()
+    });
+ 
 </script>
 @endsection

@@ -15,9 +15,8 @@
   </nav>
 </header>
 <main>
-<!-- ページごとに変化する部分は @yield で穴埋め -->
   @yield('content')
 </main>
-@yield('scripts')
+  @yield('scripts')
 </body>
 </html>
