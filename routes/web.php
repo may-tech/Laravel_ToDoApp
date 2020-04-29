@@ -19,4 +19,4 @@ Route::get('/folders/create', 'FolderController@showCreateForm')->name('folders.
 Route::post('/folders/create', 'FolderController@create');
 
 Route::get('/folders/{id}/tasks/create', 'TaskController@showCreateForm')->name('tasks.create');
-Route::post('/folder/{id}/taskss/create', 'TaskController@create');
+Route::post('/folder/{id}/tasks/create', 'TaskController@create');
